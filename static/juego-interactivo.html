@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="icon"
+		href="https://www.accionporlosods.es/recursos/circulo_ods.png"
+		type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/juego-interactivo/juego-interactivo.css" />
+    <title>Juego Interactivo: 17 ODS</title>
+</head>
+
+<body>
+    <!-- Botón para volver a la página de inicio -->
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="/">
+            <button class="button-home">VOLVER A LA PÁGINA DE INICIO</button>
+        </a>
+    </div>
+
+    <center><h1>JUEGOS INTERACTIVOS - 17 ODS </h1></center>
+
+    <!-- Pantalla inicial -->
+    <div id="pantalla-inicial">
+        <p>¿Cuál es el objetivo de desarrollo sostenible (ODS) que se muestra en la imagen?
+        <p>
+            <button class="btn" onclick="comenzarJuego()">COMENZAR A JUGAR</button>
+    </div>
+
+    <!-- Pantalla juego -->
+    <div class="pantalla-juego" id="pantalla-juego">
+        <p>¿Cuál es el objetivo de desarrollo sostenible (ODS) que se muestra en la imagen?</p>
+        <img src="" alt="Imagen del ODS" id="imgODS">
+        <div class="opciones">
+            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                <div class="letra" id="l0">A</div>
+                <div class="nombre" id="n0">OPCIÓN A</div>
+            </div>
+            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                <div class="letra" id="l1">B</div>
+                <div class="nombre" id="n1">OPCIÓN B</div>
+            </div>
+            <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                <div class="letra" id="l2">C</div>
+                <div class="nombre" id="n2">OPCIÓN C</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pantalla final -->
+    <div id="pantalla-final">
+        <h2>CORRECTAS: <span id="numCorrectas">0</span></h2>
+        <h2>INCORRECTAS: <span id="numIncorrectas">0</span></h2>
+        <button class="btn" onclick="volverAlInicio()">Jugar de Nuevo</button>
+    </div>
+
+    <footer>Desarrollado por Jorge Vilcapuma</footer>
+    <script src="assets/js/principal/juego-interactivo/juego-interactivo.js"></script>
+</body>
+
+</html>

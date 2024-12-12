@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&family=Permanent+Marker&display=swap");
+
+.paneles {
+    display: flex;
+    width: 80vw;
+    margin: 20px;
+}
+
+.panel {
+    position: relative;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    transition: flex 0.5s linear;
+}
+
+.panel .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.panel h1 {
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+    z-index: 2; /* Asegura que el texto esté por encima del filtro */
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h1 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.panel:nth-child(1) {
+    background-image: url('https://www.repsol.com/content/dam/repsol-corporate/es/energia-e-innovacion/refineria-campo.jpg');
+}
+
+.panel:nth-child(2) {
+    background-image: url('https://www.repsol.com/content/dam/repsol-corporate/es/accionistas-e-inversores/paisaje-verde-aerogeneradores-responsive.jpg');
+}
+
+.panel:nth-child(3) {
+    background-image: url('https://storage.googleapis.com/a1aa/image/E342lLIdRLrbIxwofbxDkYUk7GVH9onGzUTuPD9fy4HfHEpnA.jpg');
+}
+
+.panel:nth-child(4) {
+    background-image: url('https://storage.googleapis.com/a1aa/image/tK3MThbe5ZU6eUTo20UAxyyyNeUUfNhT5aFteAZG5GO2tQkeE.jpg');
+}
+
+.panel:nth-child(5) {
+    background-image: url('https://storage.googleapis.com/a1aa/image/foOUw7DBpZTwMig17tJfJJ96tXArGICym1B0Jie3SBbQNEpnA.jpg');
+}
+
+.panel:nth-child(6) {
+    background-image: url('https://storage.googleapis.com/a1aa/image/zbema5gvJMy7T68wU0TXF9Vi9AF4sFUykiEh3DgPTMMuDR6JA.jpg');
+}
+
+.panel:nth-child(7) {
+    background-image: url('https://storage.googleapis.com/a1aa/image/sOfKeTfVAiLn0JKKsnfRVA2VvdeiPFcPZqX7q7iqmkHYCRkeE.jpg');
+}
+
+.panel:nth-child(8) {
+    background-image: url('https://storage.googleapis.com/a1aa/image/BpgV5kNMZLImIp8lwN4nDn3i1z4npENG1YJeowWNemqLJi0TA.jpg');
+}
+
+.panel:nth-child(9) {
+    background-image: url('https://storage.googleapis.com/a1aa/image/zSC5gSJFcbJVP17ENtRicj4CQbqh5k0cNXv4MkefF9sDKi0TA.jpg');
+}
+
+.panel:nth-child(10) {
+    background-image: url('https://storage.googleapis.com/a1aa/image/dl2eL6yi1DwAXKM2HhQ23RoIZzlefneWAVknEBaGIqYDtISPB.jpg');
+}
+
+.panel:nth-child(11) {
+    background-image: url('https://storage.googleapis.com/a1aa/image/n1GEGWR4h3KWENBRQssJPtU1FNvOlYEON30nNPWKX5bGjI9E.jpg');
+}
+
+.panel:nth-child(12) {
+    background-image: url('https://storage.googleapis.com/a1aa/image/PRcHTze2xelUwkfK2E6Z757k2gAdH0ELPiCIAuu8PD5daEpnA.jpg');
+}
+
+@media (max-width: 1000px) {
+    .panel:nth-of-type(7),
+    .panel:nth-of-type(8),
+    .panel:nth-of-type(9),
+    .panel:nth-of-type(10),
+    .panel:nth-of-type(11),
+    .panel:nth-of-type(12) {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5),
+    .panel:nth-of-type(6),
+    .panel:nth-of-type(7),
+    .panel:nth-of-type(8),
+    .panel:nth-of-type(9),
+    .panel:nth-of-type(10),
+    .panel:nth-of-type(11),
+    .panel:nth-of-type(12) {
+        display: none;
+    }
+
+    .panel h1 {
+        font-size: 16px;
+    }
+}

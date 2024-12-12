@@ -1,0 +1,73 @@
+main.cards-bp {
+  display: flex;
+  padding: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+main.cards-bp section.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-width: 468px;
+  margin-left: 32px;
+}
+
+main.cards-bp section.card:first-child {
+  margin-left: 0;
+}
+
+main.cards-bp section.card button {
+  padding: 0.1rem 1rem;
+  text-transform: uppercase;
+  border-radius: 32px;
+  border: 0;
+  cursor: default;
+  font-size: 80%;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 10px 0;
+}
+
+main.cards-bp section.card.mision button {
+  background: linear-gradient(to right, #facc07, #f0d459);
+}
+
+main.cards-bp section.card.vision button {
+  background: linear-gradient(to right, #a5a9c0, #7e86b3);
+}
+
+main.cards-bp section.card.valores button {
+  background: linear-gradient(to right, #22255c, #35375e);
+}
+
+main.cards-bp section.card.mision {
+  box-shadow: 20px 20px 50px -30px #facc07;
+}
+
+main.cards-bp section.card.vision {
+  box-shadow: 20px 20px 50px -30px #a5a9c0;
+}
+
+main.cards-bp section.card.valores {
+  box-shadow: 20px 20px 50px -30px #22255c;
+}
+
+@media screen and (max-width: 720px) {
+  main.cards-bp {
+    flex-direction: column;
+  }
+
+  main.cards-bp section.card {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+
+  main.cards-bp section.card:last-child {
+    margin-bottom: 0;
+  }
+}

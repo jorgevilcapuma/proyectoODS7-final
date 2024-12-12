@@ -1,0 +1,118 @@
+/* Estilos para la tabla */
+table.dataTable thead {
+    background-color: #adb06b;
+    color: aliceblue;
+}
+
+table.dataTable thead th {
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table.dataTable tbody tr {
+    background-color: rgba(41, 40, 40, 0.082);
+    height: 30px;
+}
+
+table.dataTable tbody td {
+    vertical-align: middle;
+}
+
+table.dataTable tbody tr .id {
+    text-align: center;
+}
+
+table.dataTable tbody tr .user {
+    text-align: center;
+}
+
+table.dataTable tbody tr .email {
+    text-align: center;
+}
+
+table.dataTable tbody tr:hover {
+    background-color: #adb06b67;
+}
+
+
+
+/*Estilos BootStrap específicos para la tabla*/
+
+/* Resetea los estilos por defecto de Bootstrap en el contenedor */
+.bootstrap-scope {
+    all: initial; /* Resetea los estilos por defecto */
+    display: block;
+}
+
+/* Resetea los estilos de los elementos secundarios */
+.bootstrap-scope * {
+    all: unset;
+    display: revert;
+}
+
+/* Reactiva los estilos de Bootstrap dentro del contenedor */
+.bootstrap-scope .table,
+.bootstrap-scope .table-striped,
+.bootstrap-scope .table-bordered {
+    all: unset;
+    display: revert;
+}
+
+/* Ajusta los estilos de los botones de paginación */
+.bootstrap-scope .dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0.25rem 0.5rem;
+    width: 70px;
+    height: 22px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #adb06b;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Efectos hover y active en los botones */
+.bootstrap-scope .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: #adb06bb0;
+}
+
+.bootstrap-scope .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: #adb06bb0;
+    color: #fff;
+}
+
+/* Ajustes para el botón deshabilitado */
+.bootstrap-scope .dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+    color: #6c757d;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+    cursor: not-allowed;
+}
+
+/* Estilos para los controles de "Mostrar X registros" y "Buscar" */
+.bootstrap-scope .dataTables_wrapper .dataTables_length,
+.bootstrap-scope .dataTables_wrapper .dataTables_filter {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Estilos para los campos de "Mostrar X registros" y "Buscar" */
+.bootstrap-scope .dataTables_wrapper .dataTables_length select,
+.bootstrap-scope .dataTables_wrapper .dataTables_filter input {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    color: #333;
+    width: auto;
+}
+
+/* Elimina el foco (punto de selección) cuando un botón de paginación está deseleccionado */
+.bootstrap-scope .paginate_button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}

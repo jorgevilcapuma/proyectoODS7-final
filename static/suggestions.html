@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<link rel="icon"
+		href="https://www.accionporlosods.es/recursos/circulo_ods.png"
+		type="image/x-icon">
+	<title>ODS - T19</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="contact is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1 id="logo"><a href="/"><img id="header-img" src="images/ods-icon.png" alt="ODS Logo"
+						style="width: 70px;">
+				</a></h1>
+			<nav id="nav">
+				<ul>
+					<li class="current"><a href="/">Inicio</a></li>
+					<li class="submenu">
+						<a href="#">Recursos</a>
+						<ul>
+							<br>
+							<li><a href="business-plan.html">Plan de Negocio - ODS 07</a></li>
+							<li><a href="ods07.html">ODS 07</a></li>
+						</ul>
+					</li>
+					<li><a href="login.html" class="button primary">Login</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<article id="main">
+
+			<header class="special container">
+				<span class="icon solid fa-envelope"></span>
+				<h2>Sugerencias</h2>
+				<p>Este formulario está diseñado para recoger tus mejores sugerencias<br />
+					sobre cómo implementar acciones adaptables en torno a<br />
+					un Objetivo de Desarrollo Sostenible (ODS).</p>
+			</header>
+
+			<!-- Formulario -->
+			<section class="wrapper style4 special container medium">
+				<div class="content">
+					<form id="suggestionForm" novalidate>
+						<div class="row gtr-50">
+							<div class="col-6 col-12-mobile">
+								<input type="text" id="firstname" name="firstname" placeholder="Nombre" required />
+								<div class="error-message" id="firstnameError" style="color: red; font-size: 14px;">
+								</div>
+							</div>
+							<div class="col-6 col-12-mobile">
+								<input type="text" id="lastname" name="lastname" placeholder="Apellido" required />
+								<div class="error-message" id="lastnameError" style="color: red; font-size: 14px;">
+								</div>
+							</div>
+							<div class="col-12">
+								<input type="email" id="email" name="email" placeholder="Correo Electrónico" required />
+								<div class="error-message" id="emailError" style="color: red; font-size: 14px;"></div>
+							</div>
+							<div class="col-12">
+								<textarea name="suggestion" id="suggestion" placeholder="Sugerencia" rows="5" required
+									maxlength="200"></textarea>
+								<div class="error-message" id="suggestionError" style="color: red; font-size: 14px;">
+								</div>
+								<span style="color: gray; font-size: 13px;">Máx. 200 caracteres.</span>
+							</div>
+							<div class="col-12">
+								<ul class="buttons">
+									<li><input type="submit" class="special" value="Enviar Sugerencia" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+
+		</article>
+
+		<!-- Footer -->
+		<footer id="footer">
+
+			<ul class="icons">
+				<li><a href="#" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands circle fa-google-plus-g"><span class="label">Google+</span></a></li>
+				<li><a href="#" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+				<li><a href="#" class="icon brands circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+			</ul>
+
+			<ul class="copyright">
+				<li>Objetivos de Desarrollo Sostenible</li>
+				<li>&copy; Team 19 - AS241S2 Vallegrande</li>
+			</ul>
+
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/extra/jquery.min.js"></script>
+	<script src="assets/js/extra/navbar-dropotron.js"></script>
+	<script src="assets/js/extra/button-initial.js"></script>
+	<script src="assets/js/extra/navbar-movement.js"></script>
+	<script src="assets/js/extra/browser.min.js"></script>
+	<script src="assets/js/extra/breakpoints.min.js"></script>
+	<script src="assets/js/extra/navbar-responsive.js"></script>
+	<script src="assets/js/extra/main.js"></script>
+	<script src="assets/js/principal/suggestions/suggestion-form.js"></script>
+
+</body>
+
+</html>

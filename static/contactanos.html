@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon"
+		href="https://www.accionporlosods.es/recursos/circulo_ods.png"
+		type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/contactanos/contactanos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> 
+    <title>ODS - Team 19</title>
+
+
+</head>
+
+<body>
+    <section class="hero-section">
+        <a href="/ods07.html" class="home-button">
+            <i class="fas fa-home"></i>
+        </a>
+        <div class="about-section">
+            <h2>EcoHomes</h2>
+            <h1>¿Quieres conocer mas?</h1>
+            <p>Nuestro formulario de energía no contaminante es una invitación a ser parte del cambio hacia un futuro
+                sostenible. Buscamos recopilar ideas, proyectos y opiniones que impulsen el uso de
+                energías limpias y responsables.</p>
+        </div>
+
+        <div class="contact-section-container">
+            <div class="contact-section">
+                <h2>CONTÁCTANOS</h2>
+                <form id="contactanosForm" class="contact-form" novalidate>
+                    <div class="form-row">
+                        <label for="names">Nombre *</label>
+                        <input type="text" id="names" name="names" placeholder="Introduce tu nombre" required>
+                        <div class="error-message" id="namesError" style="color: red; font-size: 12px;">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="lastname">Apellido *</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Introduce tu apellido" required>
+                        <div class="error-message" id="lastnameError" style="color: red; font-size: 12px;">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="cellphone">Nro. Telefónico *</label>
+                        <input type="text" id="cellphone" name="cellphone" placeholder="Introduce tu número telefónico" maxlength="9" required>
+                        <div class="error-message" id="cellphoneError" style="color: red; font-size: 12px;">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="Introduce tu email" required>
+                        <div class="error-message" id="emailError" style="color: red; font-size: 12px;">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="messageContact">Mensaje *</label>
+                        <textarea id="messageContact" name="messageContact" placeholder="Introduce tu mensaje" required></textarea>
+                        <span style="color: gray; font-size: 13px;">Máx. 500 caracteres.</span>
+                        <div class="error-message" id="messageContactError" style="color: red; font-size: 12px;">
+                        </div>
+                    </div>
+                    <input type="submit" class="special" value="Enviar Sugerencia" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personaje animado -->
+    <div class="character-container">
+        <img id="character-image" alt="Personaje Animado" class="character">
+        <div class="dialogue-box">
+            <p id="dialogue-text"></p>
+        </div>
+    </div>
+
+
+    <script src="assets/js/principal/contactanos/contactanos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

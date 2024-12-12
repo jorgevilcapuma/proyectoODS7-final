@@ -1,0 +1,22 @@
+input[type="date"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px; /* Limita el tamaño del input */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="date"]:focus {
+    border-color: #dbdfe2; /* Cambia el color del borde al recibir foco */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Resalta con sombra */
+}
+
+
+/* Estilo opcional para la etiqueta del input */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #dbdfe2; /* Cambia el color del selector de fecha */
+    border-radius: 5px;
+    padding: 5px;
+}
